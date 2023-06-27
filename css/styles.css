@@ -60,7 +60,8 @@ img {
 }
 
 .container {
-    width: 1158px;
+    width: 100%;
+    max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -227,11 +228,13 @@ img {
 
 .main-feature {
     display: flex;
-    gap: 24px;
+    gap: 72px;
+    flex-wrap: wrap;
 }
 
 .main-feature-list {
-    width: calc((100%-72px) / 4);
+    width: 100%;
+    position: relative;
 }
 
 .main-box-icon {
@@ -253,12 +256,49 @@ img {
     letter-spacing: 0.02em;
     color: var(--title-color);
     margin-bottom: 8px;
+    text-align: center;
 }
 .main-feature-paragraf{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color);
+}
+
+@media screen and (min-width: 428px) {
+   .container { 
+        max-width: 396px;
+    } 
+}
+
+@media screen and (min-width: 428px) {
+.main-feature-list {
+        max-width: 396px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+        .container {
+            max-width: 736px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+.main-feature-list {
+        max-width: unset;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+        .container {
+            max-width: 1126px;
+        }
+    }
+
+@media screen and (min-width: 1158px) {
+    .main-feature-list {
+        max-width: 1126px;
+    }
 }
 
 /************* SECTION SERVICES **************/

@@ -167,6 +167,14 @@
 
      /***** SECTION TEAM *****/
 
+    .team {
+        background-color: var(--color-white);
+        text-align: center;
+        text-transform: capitalize;
+        margin: 0 auto;
+        padding: 96px 0;
+    }
+
     .team-list {
         flex-wrap: wrap;
         flex-direction: unset;

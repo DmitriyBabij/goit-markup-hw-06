@@ -377,11 +377,11 @@ img {
 .team{
     background-color: var(--color-white);
     text-align: center;
-    text-transform: capitalize;
     margin: 0 auto;
     /*padding: 120px 0;*/
     padding: 96px 0;
 }
+
 
 .team-list-content {
     background-color: var(--main-color);
@@ -404,9 +404,9 @@ img {
 
 .team-list {
     display: flex;
-    flex-direction: column;
     gap: 72px;
-    margin-top: 48px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .container-team {

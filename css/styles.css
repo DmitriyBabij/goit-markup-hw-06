@@ -67,6 +67,8 @@ img {
 
 .header-container {
     display: flex;
+    justify-content: space-between;
+    padding: 24px 16px 22px 16px;
 }
 
 .header {
@@ -527,15 +529,32 @@ img {
 
 .footer-cover{
     background-color: var(--title-color);
-    padding: 100px 0;
+    padding: 96px 0;
 }
 
 .container-footer {
-    align-items: baseline;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.container-foot-web {
-    margin-right: 96px;
+.container-foot-web:first-child {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: right;  
+}
+
+.footer-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--link-color);
+    text-decoration: none;
 }
 
 .span_studio_f {
@@ -548,10 +567,18 @@ img {
 }
 
 .footer-paragraf {
+    color: var(--color-white);
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--color-white);
     max-width: 264px;
+    margin-bottom: 72px;
+}
+
+.container-foot-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .social-title {
@@ -566,6 +593,7 @@ img {
 .footer-icon-list {
     display: flex;
     gap: 16px;
+    margin-bottom: 72px;
 }
 
 .footer-icon-tetle {
@@ -597,30 +625,34 @@ img {
 /*_____________Footer Subscribe-box_____________*/
 
 .subscribe-box {
-    margin-left: 80px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
 }
 
 .subscribe-title {
-    color: var(--white, #FFF);
+    color:#FFF;
+    display: block;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.32px;
+    letter-spacing: 0.02em;
     margin-bottom: 16px;
-    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.32px;
 }
 
 .subscribe-form {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
 }
 
 .subscribe-input {
-    width: 264px;
+    width: 398px;
     height: 40px;
-    border: 1px solid #ffffff;
+    border: 1px solid #FFF;
     background-color: transparent;
     font-size: 12px;
     line-height: 1.5;

@@ -4,12 +4,6 @@
     .container {
         max-width: 428px;
     }
-
-    .header-container {
-        display: flex;
-        justify-content: space-between;
-        padding: 24px 16px 22px 16px;
-    }
     
 }
 
@@ -144,11 +138,11 @@
                     rgba(46, 47, 66, 0.7)),
                 url(../images/people-office-hero-2x.jpg);
         }
+    }
 
-        .header-container {
-            display: flex;
-            padding: 0 16px;
-        }
+    .header-container {
+        display: flex;
+        padding: 0 16px;
     }
 
      /***** SECTION FEATURE *****/
@@ -187,7 +181,35 @@
 
      /***** FOOTER *****/
 
-    
+    .container-footer {
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: unset;
+        flex-wrap: wrap;
+    }
+
+    .container-foot-web {
+        margin-right: 24px;
+        margin-left: 108px;
+        align-items: baseline;
+    }
+
+    .container-foot-icon {
+        align-items: baseline;
+    }
+
+    .subscribe-box {
+        align-items: start;
+        margin-left: 108px;
+    }
+
+    .subscribe-form {
+        flex-direction: row;
+    }
+
+    .subscribe-input {
+        width: 264px;
+    }
 
 }
 
@@ -321,14 +343,31 @@
 
      /***** FOOTER *****/
 
-    .container-foot-web {
-        margin-right: 120px;
-        margin-left: 0;
+    .footer-cover {
+        padding: 100px 0;
     }
 
     .container-footer {
         display: flex;
         align-items: baseline;
+    }
+
+    .container-foot-web {
+        margin-left: 0;
+        margin-right: 120px;
+    }
+
+    .footer-paragraf {
+        min-width: 264px;
+        margin-bottom: 0;
+    }
+
+    .container-foot-icon {
+        margin-right: 80px;
+    }
+
+    .subscribe-box {
+        margin-left: 0;
     }
 
 }

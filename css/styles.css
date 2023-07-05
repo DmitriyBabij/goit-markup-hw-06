@@ -544,7 +544,7 @@ img {
     align-items: center;
 }
 
-.container-foot-web:first-child {
+.container-foot-web {
     display: flex;
     flex-direction: column;
     justify-content: right;

@@ -193,16 +193,17 @@
      /*** SECTION Customers ***/
 
     .customers-container {
-        width: 552px;
+        max-width: 584px;
     }
 
     .customers-icon-li {
-        width: calc((100% - 72px) / 3);
+        width: calc((100% - 48px) / 3);
     }
 
      /***** FOOTER *****/
 
     .container-footer {
+        max-width: 568px;
         flex-direction: row;
         align-items: baseline;
         justify-content: unset;
@@ -211,7 +212,6 @@
 
     .container-foot-web {
         margin-right: 24px;
-        margin-left: 108px;
         align-items: baseline;
         margin-bottom: 72px;
     }
@@ -224,7 +224,6 @@
 
     .subscribe-box {
         align-items: start;
-        margin-left: 108px;
     }
 
     .subscribe-form {
@@ -366,7 +365,7 @@
      /*** SECTION Customers ***/
 
     .customers-container {
-        width: 1128px;
+        width: 1158px;
     }
 
     .section-customers {
@@ -394,11 +393,13 @@
     .container-footer {
         display: flex;
         align-items: baseline;
+        gap: 0;
     }
 
     .container-foot-web {
         margin-left: 0;
         margin-right: 120px;
+        margin-bottom: 0;
     }
 
     .footer-paragraf {
@@ -408,6 +409,7 @@
 
     .container-foot-icon {
         margin-right: 80px;
+        margin-bottom: 0;
     }
 
     .subscribe-box {
